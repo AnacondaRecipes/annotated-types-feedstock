@@ -1,4 +1,5 @@
 {% set name = "annotated-types" %}
+{% set alt_name = name.replace('-','_') %}
 {% set version = "0.6.0" %}
 
 package:
@@ -6,7 +7,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ alt_name }}/{{ alt_name }}-{{ version }}.tar.gz
   sha256: 563339e807e53ffd9c267e99fc6d9ea23eb8443c08f112651963e24e22f84a5d
 
 build:
@@ -32,7 +33,7 @@ test:
     - pip
 
 about:
-  home: https://pypi.org/project/annotated-types
+  home: https://github.com/annotated-types/annotated-types
   summary: Reusable constraint types to use with typing.Annotated
   description: |
     This package provides metadata objects which can be used to represent common constraints such as upper and lower
@@ -42,8 +43,8 @@ about:
   license: MIT
   license_file: LICENSE
   license_family: MIT
-  doc_url: https://pypi.org/project/annotated-types
-  dev_url: https://pypi.org/project/annotated-types
+  doc_url: https://github.com/annotated-types/annotated-types
+  dev_url: https://github.com/annotated-types/annotated-types
 
 extra:
   recipe-maintainers:
