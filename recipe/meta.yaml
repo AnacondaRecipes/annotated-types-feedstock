@@ -22,7 +22,7 @@ requirements:
     - hatchling
   run:
     - python
-    - typing-extensions >=4.0.0
+    - typing-extensions >=4.0.0 # [py<39]
 
 test:
   source_files:
